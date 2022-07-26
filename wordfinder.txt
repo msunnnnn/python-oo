@@ -1,0 +1,12 @@
+﻿Cat
+Taco
+Dog
+Chalupa
+Keys
+Car
+Animals
+House
+Door
+Car
+Wall
+Roof
