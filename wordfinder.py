@@ -12,8 +12,8 @@ class WordFinder:
 
     def get_word_list(self):
         """creates a list of words from file_path"""
-        words = open(self.file_path)
-        return [word.strip('\n').strip('\ufeff') for word in words]
+        lines = open(self.file_path)
+        return [line.strip() for line in lines]
 
 
     def random(self):
@@ -39,6 +39,7 @@ class SpecialWordFinder(WordFinder):
         """returns a new list without blanks and #"""
         new_list = super().get_word_list()
         return [word for word in new_list if "#" not in word and word]
+        # can use startswith instead
 
 
 
